@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Homework</h1>
+    </header>
+
+    <div class="container">
+      <h2>Posts</h2>
+      {% for post in posts %}
+      <div class="card">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <footer>
+      <p>2024. Alikhan Ilyassov</p>
+    </footer>
+  </body>
+</html>
